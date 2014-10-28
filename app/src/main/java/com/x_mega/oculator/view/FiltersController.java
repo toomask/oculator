@@ -15,6 +15,7 @@ import com.x_mega.oculator.motion_picture.filter.BlendFilter;
 import com.x_mega.oculator.motion_picture.filter.BlurFilter;
 import com.x_mega.oculator.motion_picture.filter.ColorFilter;
 import com.x_mega.oculator.motion_picture.filter.DimFilter;
+import com.x_mega.oculator.motion_picture.filter.Distort;
 import com.x_mega.oculator.motion_picture.filter.Filter;
 import com.x_mega.oculator.motion_picture.filter.FutureFilter;
 import com.x_mega.oculator.motion_picture.filter.GridFilter;
@@ -27,7 +28,6 @@ import com.x_mega.oculator.motion_picture.filter.ReverseFilter;
 import com.x_mega.oculator.motion_picture.filter.Rotate;
 import com.x_mega.oculator.motion_picture.filter.SpeedFilter;
 import com.x_mega.oculator.motion_picture.filter.ThreadedPixelFilter;
-import com.x_mega.oculator.motion_picture.filter.TightDistort;
 import com.x_mega.oculator.motion_picture.filter.TriangularPatternGenerator;
 import com.x_mega.oculator.motion_picture.filter.UltraFilter;
 import com.x_mega.oculator.motion_picture.filter.ZoomBlur;
@@ -114,7 +114,7 @@ public class FiltersController extends FrameLayout implements FilterItemView.OnF
         addFilter(new ZoomBlur(), "Zoom");
         addFilter(new ThreadedPixelFilter(new GrainShader()), "Grain");
         addFilter(new ThreadedPixelFilter(new LiftShader()), "Lift");
-        addFilter(new TightDistort(), "Distort");
+        addFilter(new Distort(), "Distort");
         addFilter(new Rotate(), "Rotate");
         addFilter(new TriangularPatternGenerator(), "Triangles");
 
