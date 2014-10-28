@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="0dp"
+                android:background="#000000"
+    >
+
+    <com.x_mega.oculator.view.PicturePositionIndicator
+        android:id="@+id/picturePositionIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:text="Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveAndShare"
+        android:layout_weight="1"
+        android:background="@drawable/background_share_button"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/icon_share"
+        android:textStyle="bold"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp"
+        />
+
+    <com.x_mega.oculator.view.MotionPictureView
+        android:id="@+id/motionPictureView"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/shareButton"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/motionPictureView"
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        >
+        <ImageView
+            android:id="@+id/undoButton"
+            android:background="@drawable/background_undo_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:onClick="onUndoClicked"
+            android:layout_weight="2"
+            android:src="@drawable/icon_undo"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            />
+        <ImageView
+            android:id="@+id/filtersButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:onClick="onFiltersClick"
+            android:layout_weight="3"
+            android:background="@drawable/background_filters_button"
+            android:src="@drawable/icon_filter"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            />
+        <ImageView
+            android:id="@+id/brushesButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:onClick="onBrushesClick"
+            android:layout_weight="3"
+            android:background="@drawable/background_brushes_button"
+            android:src="@drawable/icon_brush"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/toolsViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsLayout"
+        >
+        <com.x_mega.oculator.view.FiltersController
+            android:id="@+id/filtersSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <com.x_mega.oculator.view.BrushesController
+            android:id="@+id/brushSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ViewFlipper>
+
+</RelativeLayout>

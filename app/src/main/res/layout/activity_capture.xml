@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+    >
+
+    <Button
+        android:id="@+id/shareButton"
+        android:text="Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_share_button"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"
+        />
+    <com.x_mega.oculator.view.MotionPictureView
+        android:id="@+id/motionPictureView"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/shareButton"
+        />
+    <com.x_mega.oculator.view.ShutterControllerView
+        android:id="@+id/shutterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>
