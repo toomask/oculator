@@ -1,5 +1,7 @@
 oculator 0.1
 ==============
+![alt tag](https://raw.githubusercontent.com/toomask/oculator/master/app/src/main/res/drawable-xxhdpi/app_icon.png)
+
 Best android app for making gifs with effects!
 
 
