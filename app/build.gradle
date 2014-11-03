@@ -7,7 +7,7 @@ android {
     defaultConfig {
         renderscriptTargetApi 19
         renderscriptSupportMode true
-        applicationId "com.x_mega.emotioncamera"
+        applicationId "com.x_mega.oculator"
         minSdkVersion 15
         targetSdkVersion 20
         versionCode 2
