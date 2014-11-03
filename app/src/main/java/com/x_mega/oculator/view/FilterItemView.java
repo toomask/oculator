@@ -2,7 +2,6 @@ package com.x_mega.oculator.view;
 
 import android.app.Activity;
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -77,7 +76,6 @@ public class FilterItemView extends FrameLayout implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        playSelectionSound();
         onFilterSelectedListener.onFilterSelected(filter);
     }
 
@@ -98,10 +96,5 @@ public class FilterItemView extends FrameLayout implements View.OnClickListener 
             e.printStackTrace();
         }
         return null;
-    }
-
-    private void playSelectionSound() {
-        MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.sound_apply_filter);
-  //      mediaPlayer.start();
     }
 }
