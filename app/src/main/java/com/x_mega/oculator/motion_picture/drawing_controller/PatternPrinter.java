@@ -55,7 +55,7 @@ public class PatternPrinter implements DrawingController {
         }
 
         Canvas canvas = new Canvas(drawFrame);
-        canvas.drawBitmap(patter, point.x, point.y, null);
+        canvas.drawBitmap(patter, point.x - patter.getWidth()/2, point.y - patter.getHeight()/2, null);
 
         lastPoint = point;
 

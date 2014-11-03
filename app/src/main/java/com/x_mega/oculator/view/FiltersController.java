@@ -88,7 +88,7 @@ public class FiltersController extends FrameLayout implements FilterItemView.OnF
         addFilter(new SpeedFilter(0.7f), "Fast");
         addFilter(new ReverseFilter(), "Reverse");
         addFilter(new BackToBackFilter(), "B2B");
-        addFilter(new RainbowFilter(getContext()), "Gay");
+        addFilter(new RainbowFilter(getContext()), "Rainbow");
         addFilter(new BlurFilter(), "Blur");
         addFilter(new ColorFilter("#88ba4cba"), "Purple");
         addFilter(new ColorFilter("#8874e732"), "Green");
