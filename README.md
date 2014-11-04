@@ -1,4 +1,4 @@
-oculator 0.1
+oculator 0.1 [![Google Play](http://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=com.x_mega.oculator)
 ==============
 ![alt tag](https://raw.githubusercontent.com/toomask/oculator/master/app/src/main/res/drawable-xxhdpi/app_icon.png)
 
